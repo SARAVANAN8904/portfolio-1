@@ -6,44 +6,36 @@
 }
 
 body {
-    /* background-color: #1a1a1a; */
-    /* background-color: rgb(36, 21, 44); */
     color: #fff;
-    /* background-color: #091f2c; */
     background-color: #1a1a1a;
-
-
 }
 
 /* _____________________nav-bar____________________ */
 #nav-main{
     display: flex;
     align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    justify-content: space-between;
-    margin-top: 2%;
+    justify-content:space-evenly;
     position: sticky;
     top: 0;
     left: 0;
     z-index: 100;
-    background-color: #ffffff0a;
-    border-radius: 10px;
-    padding: 5px 20px;
+    /* margin-right: 10%; */
+    background-color: #1a1a1a;
+    width: 100%;
+    padding: 4px 0px;
 }
 .logo{
     font-size: 27px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #05c8fe;
+    color: yellow;
 }
 .nav-2 ul li{
     list-style: none;
 }
 .nav-2 ul{
     display: flex;
-    gap: 24px;
+    gap: 20px;
 }
 .nav-2 ul li a{
     text-decoration: none;
@@ -53,48 +45,37 @@ body {
     font-weight: 500;
     color: #F5F5F5;
     transition: .5s;
+
 }
 .nav-2 ul li:hover a,
 .nav-2 ul li.active a{
     color: #7cf03d;
+    text-decoration: underline;
 }
-
 @media (max-width:380px) {
-    #nav-main{
-        width: 100%;
-        padding: 10px;
-        gap: 10px;
-        border-radius: 0;
-        background: none;
-        margin-left: 10%;
-    }
-    .nav-2 ul li a{
-        margin-left: 10px;
-        font-weight: 400;
-        font-size: 12px;
-        
-    }
     .logo{
-        font-size: 15px;
-        margin: 0;
+        font-size: 27px;
+        font-weight: 600;
+        margin-left: 10px;
+    }
+    .nav-2 ul{
+        gap: 5px;
     }
     .vis{
         display: none;
     }
-    ul{
-        padding-right: 20px;
-    }
 }
-
 /* ______________________About___________________________ */
 #about-start {
-    margin-top: 2%;
+    margin-top: 0.5%;
     /* margin-left: 10%; */
     padding: 10px;
     position: relative;
+    background-color: #091f2c;
+    /* height: 80vh; */
 }
 .m-1{
-    margin-right: 10%;
+    margin-right: 5%;
 }
 .about-intro {
     font-weight: 700;
@@ -133,47 +114,29 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 2%;
     /* border: solid white 2px; */
 }
 .img{
     height: 60vh;
     border: solid 2px ;
 }
-@media (max-width:480px) {
+@media (max-width:380px) {
     .about-flex-div{
-        flex-wrap: wrap;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-    }
-    .about-intro{
-        font-size: 2rem;
-    }
-    .br-1{
-        display: none;
-    }
-    .sp-1{
-        font-size: 1.5rem;
-    }
-    .about-spanI{
-        font-size: 1rem;
-    }
-    .br-p{
-        display: none;
-    }
-    .img{
-        width: 240px;
-        height: 300px;
-        margin-top: 10%;
-    }
-    .Resume-btn{
-        margin-top: 5%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: auto;
     }
 }
 /* _______________________________SKills______________________ */
 #skill-main {
     width: 100%;
-    margin-top: 5%;
+    margin-top: 1.5%;
     padding: 10px;
     margin-bottom: 3%;
-    background-color: #091f2c;
+    background-color: #1a1a1a;
+
 }
 
 .skill-container-1 {
@@ -294,6 +257,8 @@ body {
     border: solid 2px #032e58;
     padding: 1rem;
     box-shadow: rgba(7, 7, 163, 0.35) 0px 5px 15px;
+        background-color: #0c2136;
+
 
 }
 .contant-hireme{
@@ -304,6 +269,8 @@ body {
     border: solid 2px #032e58;
     box-shadow: rgba(7, 7, 163, 0.35) 0px 5px 15px;
     padding: 1rem;
+    background-color: #0c2136;
+
 
 }
 .vision-1{
