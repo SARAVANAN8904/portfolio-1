@@ -1,4 +1,105 @@
-* {
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    color: #fff;
+    /* background: linear-gradient(to right, #0c1a2b, #091f2c); */
+    background: linear-gradient(to right, #0c1a2b, #091f2c);
+}
+
+nav{
+    background-color: #091f2c;
+    height: 60px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 60px;
+    padding: 0 200px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 80px;
+}
+nav ul li {
+    display:inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 7px 13px;
+    font-weight: 600;
+
+}
+a.active,a:hover{
+    background: #1b9cff3a;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size:16px ;
+    }
+}
+@media (max-width:858px) {
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transform: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,73 +109,109 @@
 body {
     color: #fff;
     background-color: #1a1a1a;
-}
+} */
 
 /* _____________________nav-bar____________________ */
-#nav-main{
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    /* margin-right: 10%; */
-    background-color: #1a1a1a;
-    width: 100%;
-    padding: 4px 0px;
-}
-.logo{
-    font-size: 27px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: yellow;
-}
-.nav-2 ul li{
-    list-style: none;
-}
-.nav-2 ul{
-    display: flex;
-    gap: 20px;
-}
-.nav-2 ul li a{
+/* *{
+    padding: 0;
+    margin: 0;
     text-decoration: none;
-    margin-left: 24px;
-    font-size: 18px;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display:inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
     text-transform: uppercase;
-    font-weight: 500;
-    color: #F5F5F5;
-    transition: .5s;
-
+    border-radius: 3px;
+    padding: 7px 13px;
 }
-.nav-2 ul li:hover a,
-.nav-2 ul li.active a{
-    color: #7cf03d;
-    text-decoration: underline;
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s ease;
 }
-@media (max-width:380px) {
-    .logo{
-        font-size: 27px;
-        font-weight: 600;
-        margin-left: 10px;
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
     }
-    .nav-2 ul{
-        gap: 5px;
+    nav ul li a{
+        font-size:16px ;
     }
-    .vis{
-        display: none;
+}
+@media (max-width:858px) {
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transform: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left:0;
     }
 }
 /* ______________________About___________________________ */
-#about-start {
-    margin-top: 0.5%;
+/* #about-start { */
+    /* margin-top: 0.5%;
     /* margin-left: 10%; */
-    padding: 10px;
+    /* padding: 10px;
     position: relative;
-    background-color: #091f2c;
+    background-color: #091f2c; */
     /* height: 80vh; */
-}
-.m-1{
+/* } */ 
+/* .m-1{
     margin-right: 5%;
 }
 .about-intro {
@@ -114,9 +251,9 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 2%;
+    margin-top: 2%; */
     /* border: solid white 2px; */
-}
+/* }
 .img{
     height: 60vh;
     border: solid 2px ;
@@ -127,8 +264,8 @@ body {
         flex-wrap: wrap;
         width: 100vw;
         height: auto;
-    }
-}
+    } */
+
 /* _______________________________SKills______________________ */
 #skill-main {
     width: 100%;
